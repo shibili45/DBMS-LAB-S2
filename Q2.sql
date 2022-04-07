@@ -1,0 +1,10 @@
+create database q2;
+use q2;
+create table Dept(DEPTNO INT NOT NULL primary KEY,DNAME VARCHAR(20) NOT NULL,LOC VARCHAR(20) NOT NULL);
+USE q2;
+rename table Dept to department;
+select * from department;
+USE q2;
+alter table department add column(PINCODE INT NOT NULL);
+USE q2;
+select * from department;alter table department change dname dept_name varchar(20);
