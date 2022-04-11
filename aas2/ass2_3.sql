@@ -1,0 +1,10 @@
+create database books;
+use books;
+create table book_info(book_name varchar (20),author varchar(20),price int,quantity int);
+insert into book_info values('randamoozham','MT',300,5);
+insert into book_info values('ikigai','hector',500,7);
+insert into book_info values('databse of dummies','xyz',250,7);
+select * from book_info;
+set sql_safe_updates=0;
+update book_info  set quantity=quantity*2;
+select * from book_info where price>price.;
